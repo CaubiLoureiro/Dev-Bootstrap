@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <title>Bootstrap</title>
+</head>
+
+<body>
+  
+   
+   <nav class="navbar navbar-light bg-dark navbar-expand-md fixed-top">
+
+      <div class="container">
+
+         <a class="navbar-brand" href="#"><img src="assets/imagens/logo.png" alt="logo" width=80px></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse bg-dark p-3 jumbotron" id="menu">
+               <div class="navbar-nav mr-auto">
+                  <a class="nav-link nav-item" href="/index.html">Início</a>
+                  
+                  <div class="dropdown">
+                     <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#academia">Academia</a>
+                     <div class="dropdown-menu">
+                        
+                        <a class="dropdown-item" href="/acadweb.html">Web</a>
+                        <a class="dropdown-item" href="#">Redes</a>
+                        
+                     </div>
+                  </div>
+
+                  <a class="nav-link nav-item" href="#contato">Contato</a>
+               </div>
+               
+               <div class="navbar-nav">
+                  <a class="nav-link nav-item" href="#acessomodal" data-toggle="modal"><i class="fas fa-sign-in-alt"></i> Acesso</a>
+                  <a class="nav-link nav-item" href="/registro.html">Registrar</a>
+
+               </div>
+         </div>
+      </div>
+
+   </nav>
+
+
+   <div id="carosel-id" class="carousel slide d-none d-md-block mb-5" data-ride="carousel" data-interval="3000">
+
+      <ol class="carousel-indicators">
+         <li data-target="#carosel-id" data-slide-to="0" class="active"></li>
+         <li data-target="#carosel-id" data-slide-to="1"></li>
+         <li data-target="#carosel-id" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+          
+         <div class="carousel-item active">
+
+            <img src="assets/imagens/banner4.jpg" class="w-100" style="height: 400px;">
+            <div class="carousel-caption">
+               <div class="text-center">
+                  <span class="text-1">Cybersecurity</span>
+               </div>
+            </div>
+
+         </div>
+
+
+         <div class="carousel-item">
+
+            <img src="assets/imagens/banner3.jpg" class="w-100" style="height: 400px;">
+            <div class="carousel-caption">
+               <div class="text-center">
+                  <span class="text-1">Cybersecurity</span>
+               </div>
+            </div>
+
+         </div>
+
+
+         <div class="carousel-item">
+
+            <img src="assets/imagens/banner2.jpg" class="w-100" style="height: 400px;">
+            <div class="carousel-caption">
+               <div class="text-center">
+                  <span class="text-1">Cybersecurity</span>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+   </div><br><br>
+
+
+   <div class="container mt-5">
+
+      <h1 class="mt-5">Registrar</h1>
+      <form action="" class="row">
+
+         <div class="mt-3 col-12">
+            <label for="nomeid" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nomeid" placeholder="Nome">
+         </div>
+
+         <div class="mt-3 col-12">
+            <label for="emailid" class="form-label">Email</label>
+            <input type="text" class="form-control" id="emailid" placeholder="Nome">
+         </div>
+
+         <div class="mt-3 col-6">
+            <label for="senhaid" class="form-label">Senha</label>
+            <input type="text" class="form-control" id="senhaid" placeholder="Nome">
+         </div>
+
+         <div class="mt-3 col-6">
+            <label for="confirmeid" class="form-label">Confirme a senha</label>
+            <input type="text" class="form-control" id="confirmeid" placeholder="Nome">
+         </div>
+
+         <div class="mt-3 col-6">
+            <label for="dataid" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" id="dataid">
+         </div>
+
+         <div class="mt-3 col-6">
+            <label for="select" class="form-label w-100">País</label>
+            <select id="select" class="form-select w-100" aria-label="Selecinar país">
+               <option selected>Selecionar</option>
+               <option value="1">Argentina</option>
+               <option value="2">Brasil</option>
+               <option value="3">Cuba</option>
+               <option value="4">Daria</option>
+               <option value="5">Dominica</option>
+               <option value="6">Guatema</option>
+            </select>
+         </div>
+
+         <div class="mt-3 col-12">
+            <label for="formfile" class="form-label">Selecione uma Foto de Perfil</label>
+            <input class="form-control" type="file" id="formfile">
+         </div>
+
+      </form>
+
+      <div class="mt-3">
+         <button type="button" class="btn btn-dark">Registrar</button>
+      </div>
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+   <div class="footer mt-5 bg-dark">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-md-5 col-sm-6">
+               <h5>Vulnerabilities</h5>
+               <ul class="list-unstyled">
+                  <li><a href="#">Cross-site scripting (XSS)</a></li>
+                  <li><a href="#">SQL injection</a></li>
+                  <li><a href="#">Cross-site request forgery</a></li>
+                  <li><a href="#">Directory traversal</a></li>
+                  <li><a href="#">XML external entity injection</a></li>
+                  <li><a href="#">Server-side request forgery</a></li>
+                  
+               </ul">
+            </div>
+
+            <div class="col-md-5 col-sm-6">
+               <h5>Insights</h5>
+               <ul class="list-unstyled">
+                  <li><a href="#">Web Security Academy</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="">Research</a></li>
+                  <li><a href="">The Daily Swig</a></li>
+
+               </ul>
+            </div>
+
+            <div class="col-md-2 text-sm-center">
+               <img src="assets/imagens/logo.png" alt="">
+            </div>   
+
+         </div>
+      </div>
+   </div>
+
+
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
+</body>
+
+</html>

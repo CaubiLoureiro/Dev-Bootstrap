@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <title>Bootstrap</title>
+</head>
+
+<body>
+  
+   <nav class="navbar navbar-light bg-dark navbar-expand-md fixed-top">
+
+      <div class="container">
+
+         <a class="navbar-brand" href="#"><img src="assets/imagens/logo.png" alt="logo" width=80px></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse bg-dark p-3 jumbotron" id="menu">
+               <div class="navbar-nav mr-auto">
+                  <a class="nav-link nav-item" href="/index.html">Início</a>
+                  
+                  <div class="dropdown">
+                     <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#academia">Academia</a>
+                     <div class="dropdown-menu">
+                        
+                        <a class="dropdown-item" href="/acadweb.html">Web</a>
+                        <a class="dropdown-item" href="#">Redes</a>
+                        
+                     </div>
+                  </div>
+
+                  <a class="nav-link nav-item" href="#contato">Contato</a>
+               </div>
+               
+               <div class="navbar-nav">
+                  <a class="nav-link nav-item" href="#acessomodal" data-toggle="modal"><i class="fas fa-sign-in-alt"></i> Acesso</a>
+                  <a class="nav-link nav-item" href="/registro.html">Registrar</a>
+
+               </div>
+         </div>
+      </div>
+
+   </nav>
+
+
+   <div id="carosel-id" class="carousel slide d-none d-md-block mb-5" data-ride="carousel" data-interval="3000">
+
+      <ol class="carousel-indicators">
+         <li data-target="#carosel-id" data-slide-to="0" class="active"></li>
+         <li data-target="#carosel-id" data-slide-to="1"></li>
+         <li data-target="#carosel-id" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+          
+         <div class="carousel-item active">
+
+            <img src="assets/imagens/banner4.jpg" class="w-100" style="height: 400px;">
+            <div class="carousel-caption">
+               <div class="text-center">
+                  <span class="text-1">Cybersecurity</span>
+               </div>
+            </div>
+
+         </div>
+
+
+         <div class="carousel-item">
+
+            <img src="assets/imagens/banner3.jpg" class="w-100" style="height: 400px;">
+            <div class="carousel-caption">
+               <div class="text-center">
+                  <span class="text-1">Cybersecurity</span>
+               </div>
+            </div>
+
+         </div>
+
+
+         <div class="carousel-item">
+
+            <img src="assets/imagens/banner2.jpg" class="w-100" style="height: 400px;">
+            <div class="carousel-caption">
+               <div class="text-center">
+                  <span class="text-1">Cybersecurity</span>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+   </div>
+
+
+
+
+
+
+   <div class="container">
+
+      <nav style="margin-top: 140px;">
+         <div class="nav nav-tabs">
+
+           <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-1" type="button">Top10</button>
+
+           <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-2" type="button">Dados</button>
+
+
+         </div>
+       </nav>
+       
+   </div>
+
+
+
+   <div class="tab-content container" id="nav-tabContent">
+      <div class="tab-pane fade show active mt-2 jumbotron" id="nav-1">
+
+         <h3 class="mb-4 font-weight-bold">Os 10 principais riscos de segurança de aplicativos da Web </h3>
+      
+         <div class="list-group mb-5">
+               <a class="list-group-item list-group-item-dark" href="">A01:2021-Broken Access Control</a>
+               <a class="list-group-item list-group-item-secondary" href="">A02:2021-Cryptographic Failures</a>
+               <a class="list-group-item list-group-item-dark" href="">A03:2021-Injection</a>
+               <a class="list-group-item list-group-item-secondary" href="">A04:2021-Insecure Design</a>
+               <a class="list-group-item list-group-item-dark" href="">A05:2021-Security Misconfiguration</a>
+               <a class="list-group-item list-group-item-secondary" href="">A06:2021-Vulnerable and Outdated Components</a>
+               <a class="list-group-item list-group-item-dark" href="">A07:2021-Identification and Authentication Failures</a>
+               <a class="list-group-item list-group-item-secondary" href="">A08:2021-Software and Data Integrity Failures</a>
+               <a class="list-group-item list-group-item-dark" href="">A09:2021-Security Logging and Monitoring Failures</a>
+               <a class="list-group-item list-group-item-secondary" href="">A10:2021-Server-Side Request Forgery</a>
+
+         </div>
+
+
+         
+
+         <ul>
+            <li class="mb-4"><b>A01:2021-Broken Access Control</b> sobe da quinta posição; 94% dos aplicativos foram testados 
+               para alguma forma de controle de acesso quebrado. As 34 Enumerações de Fraquezas Comuns (CWEs) mapeadas 
+               para Controle de Acesso Quebrado tiveram mais ocorrências em aplicativos do que qualquer outra categoria.</li>
+   
+            <li class="mb-4"><b>A02:2021-Cryptographic Failures</b> sobem uma posição para a 2ª posição, anteriormente conhecida como Exposição 
+               de Dados Sensíveis, que era um sintoma amplo e não uma causa raiz. O foco renovado aqui está nas falhas relacionadas 
+               à criptografia, que geralmente levam à exposição de dados confidenciais ou ao comprometimento do sistema. </li>
+   
+            <li class="mb-4"><b>A03:2021-Injection</b> desliza para a terceira posição. 94% dos aplicativos foram testados para alguma forma de injeção, 
+               e os 33 CWEs mapeados nesta categoria têm o segundo maior número de ocorrências em aplicativos. Cross-site Scripting agora 
+               faz parte desta categoria nesta edição. </li>
+   
+            <li class="mb-4"><b>A04:2021-Insecure Design</b> é uma nova categoria para 2021, com foco em riscos relacionados a falhas de projeto. Se realmente 
+               queremos “ir para a esquerda” como um setor, isso exige mais uso de modelagem de ameaças, padrões e princípios de design seguros 
+               e arquiteturas de referência. </li>
+   
+            <li class="mb-4"><b>A05:2021-Security Misconfiguration</b> subiu do 6º lugar na edição anterior; 90% dos aplicativos foram testados para 
+               algum tipo de configuração incorreta. Com mais mudanças em software altamente configurável, não é surpreendente ver essa categoria 
+               subir. A antiga categoria para XML External Entities (XXE) agora faz parte desta categoria. </li>
+   
+            <li class="mb-4"><b>A06:2021-Vulnerable and Outdated Components</b> foi anteriormente intitulado Using Components with Known Vulnerabilities e é o número 
+               2 na pesquisa da comunidade Top 10, mas também tinha dados suficientes para entrar no Top 10 por meio de análise de dados. Essa 
+               categoria subiu do 9º lugar em 2017 e é um problema conhecido que lutamos para testar e avaliar o risco. É a única categoria a não 
+               ter nenhuma Vulnerabilidade e Exposições Comuns (CVEs) mapeadas para os CWEs incluídos, portanto, uma exploração padrão e pesos de 
+               impacto de 5,0 são considerados em suas pontuações. </li>
+   
+            <li class="mb-4"><b>A07:2021-Identification and Authentication Failures</b> eram anteriormente a autenticação quebrada e está deslizando para 
+               baixo da segunda posição e agora inclui CWEs que estão mais relacionados a falhas de identificação. Essa categoria ainda 
+               é parte integrante do Top 10, mas a maior disponibilidade de estruturas padronizadas parece estar ajudando.</li>
+   
+            <li class="mb-4"><b>A08:2021-Software and Data Integrity Failures</b> é uma nova categoria para 2021, com foco em fazer suposições relacionadas a 
+               atualizações de software, dados críticos e pipelines de CI/CD sem verificar a integridade. Um dos impactos mais ponderados dos 
+               dados do Common Vulnerability and Exposures/Common Vulnerability Scoring System (CVE/CVSS) mapeados para os 10 CWEs nesta categoria. 
+               A desserialização insegura de 2017 agora faz parte dessa categoria maior.</li>
+   
+            <li class="mb-4"><b>A09:2021-Security Logging and Monitoring Failures</b> eram anteriormente Registro e monitoramento insuficientes e 
+               são adicionadas a partir da pesquisa do setor (nº 3), passando do número 10 anteriormente. Essa categoria é expandida para 
+               incluir mais tipos de falhas, é difícil de testar e não está bem representada nos dados CVE/CVSS. No entanto, falhas nesta 
+               categoria podem afetar diretamente a visibilidade, alertas de incidentes e perícia.</li>
+   
+            <li class="mb-4"><b>A10:2021-Server-Side Request Forgery</b> é adicionado da pesquisa da comunidade Top 10 (#1). Os dados mostram uma taxa de 
+               incidência relativamente baixa com cobertura de teste acima da média, juntamente com classificações acima da média para 
+               potencial de exploração e impacto. Esta categoria representa o cenário em que os membros da comunidade de segurança estão 
+               nos dizendo que isso é importante, embora não esteja ilustrado nos dados neste momento.</li>
+   
+         </ul>
+      
+      
+         
+
+      </div>
+
+
+
+
+      <div class="tab-pane fade container jumbotron" id="nav-2">
+
+         <h1>Top 10 2020 Plano de Análise de Dados </h1>
+         <h2>Metas </h2>
+         <p>Coletar o conjunto de dados mais abrangente relacionado às vulnerabilidades de aplicativos identificadas até o momento para permitir a análise do Top 10 e de outras pesquisas futuras.  Esses dados devem vir de várias fontes;  fornecedores e consultorias de segurança, recompensas por bugs, juntamente com contribuições da empresa/organização.  Os dados serão normalizados para permitir a comparação de nível entre ferramentas assistidas por humanos e humanos assistidos por ferramentas. </p>
+         <p><br></p>
+         <h2>Infraestrutura de análise </h2>
+         <p>Planeje aproveitar a OWASP Azure Cloud Infrastructure para coletar, analisar e armazenar os dados contribuídos. </p>
+         <p><br></p>
+         <h2>Contribuições </h2>
+         <p>Planejamos apoiar contribuições conhecidas e pseudo-anônimas.  A preferência é que as contribuições sejam conhecidas;  isso ajuda imensamente na validação/qualidade/confiança dos dados enviados.  Se o remetente preferir que seus dados sejam armazenados anonimamente e até mesmo enviar os dados anonimamente, eles deverão ser classificados como “não verificados” versus “verificados”. </p>
+         <h3 >Contribuição de dados verificada </h3>
+         <p>Cenário 1: O remetente é conhecido e concordou em ser identificado como parte contribuinte. </font><br>
+         Cenário 2: O remetente é conhecido, mas prefere não ser identificado publicamente. <br>
+         Cenário 3: O remetente é conhecido, mas não deseja que ele seja registrado no conjunto de dados. <br></p>
+         <h3 >Contribuição de dados não verificada </h3>
+         <p>Cenário 4: O remetente é anônimo.  (Devemos apoiar?) </p>
+         <p>A análise dos dados será realizada com uma distinção cuidadosa quando os dados não verificados fizerem parte do conjunto de dados que foi analisado. </p>
+         <p><br></p>
+         <h2>Processo de Contribuição </h2>
+         <p>Existem algumas maneiras de contribuir com dados: </p>
+         <ol>
+         <li>Envie por e-mail um arquivo CSV/Excel com os conjuntos de dados para brian.glas@owasp.org </li>
+         <li>Carregue um arquivo CSV/Excel para uma “pasta de contribuição” (em breve) </li>
+         </ol>
+         <p>Exemplos de modelos podem ser encontrados no GitHub: <a href="https://github.com/OWASP/Top10/tree/master/2021/Data">https://github.com/OWASP/Top10/tree/master/2021/Data </a></p>
+         <p><br></p>
+         <h2>Período de Contribuição </h2>
+         <p>Planejamos aceitar contribuições para o novo Top 10 de maio a 30 de novembro de 2020 para dados que datam de 2017 até o momento. </p>
+         <p><br></p>
+         <h2>Estrutura de dados </h2>
+         <p>Os seguintes elementos de dados são <strong>obrigatórios </strong>ou opcionais. <br>
+         Quanto mais informações forem fornecidas, mais precisa será nossa análise. <br>
+         No mínimo, precisamos do período de tempo, número total de aplicativos testados no conjunto de dados e a lista de CWEs e contagens de quantos aplicativos continham esse CWE. <br>
+         Se possível, forneça os metadados adicionais, porque isso nos ajudará muito a obter mais informações sobre o estado atual dos testes e vulnerabilidades. <br></p>
+         <h3>Metadados </h3>
+         <ul>
+         <li>Nome do Contribuinte (org ou anon) <br></li>
+         <li>E-mail de contato do colaborador <br></li>
+         <li><strong>Período de tempo (2019, 2018, 2017) </strong><br></li>
+         <li><strong>Número de aplicativos testados </strong><br></li>
+         <li>Tipo de teste (TaH, HaT, Ferramentas) <br></li>
+         <li>Idioma principal (código) <br></li>
+         <li>Região geográfica (Global, América do Norte, UE, Ásia, outros) <br></li>
+         <li>Indústria Primária (Múltipla, Financeira, Industrial, Software, ??) <br></li>
+         <li>Se os dados contêm ou não retestes ou os mesmos aplicativos várias vezes (T/F) <br></li>
+         </ul>
+         <h3>Dados CWE </h3>
+         <ul>
+         <li><strong>Uma lista de CWEs com contagem de aplicativos encontrados para conter esse CWE </strong><br></li>
+         </ul>
+         <p><em>Se possível, forneça CWEs principais nos dados, não categorias CWE. </em><br>
+         <em>Isso ajudará na análise, qualquer normalização/agregação feita como parte dessa análise será bem documentada. </em></p>
+         <h4>Observação:</h4>
+         <p>Se um colaborador tiver dois tipos de conjuntos de dados, um de fontes HaT e outro de TaH, é recomendável enviá-los como dois conjuntos de dados separados. <br>
+         <em>HaT = Ferramentas assistidas por humanos (maior volume/frequência, principalmente de ferramentas) </em><br>
+         <em>TaH = Humano assistido por ferramenta (menor volume/frequência, principalmente de testes em humanos) </em><br></p>
+         <p><br></p>
+         <h2>Enquete </h2>
+         <p>Da mesma forma que o Top Ten 2017, planejamos realizar uma pesquisa para identificar até duas categorias do Top Ten que a comunidade acredita serem importantes, mas podem ainda não estar refletidas nos dados.  Planejamos realizar a pesquisa em maio ou junho de 2020 e usaremos os formulários do Google de maneira semelhante à última vez.  Os CWEs na pesquisa virão de descobertas de tendências atuais, CWEs que estão fora do Top Ten em dados e outras fontes potenciais.</p>
+         <p><br></p>
+         <h2>Processo </h2>
+         <p>Em um nível alto, planejamos realizar um nível de normalização de dados;  no entanto, manteremos uma versão dos dados brutos contribuídos para análise futura.  Analisaremos a distribuição CWE dos conjuntos de dados e potencialmente reclassificaremos alguns CWEs para consolidá-los em buckets maiores.  Documentaremos cuidadosamente todas as ações de normalização tomadas para que fique claro o que foi feito.</p>
+         <p>Planejamos calcular a probabilidade seguindo o modelo que desenvolvemos em 2017 para determinar a taxa de incidência em vez da frequência para avaliar a probabilidade de um determinado aplicativo conter pelo menos uma instância de um CWE.  Isso significa que não estamos procurando a taxa de frequência (número de descobertas) em um aplicativo, mas sim o número de aplicativos que tiveram uma ou mais instâncias de um CWE.  Podemos calcular a taxa de incidência com base no número total de aplicativos testados no conjunto de dados em comparação com quantos aplicativos cada CWE foi encontrado.</p>
+         <p>Além disso, desenvolveremos pontuações básicas do CWSS para os 20-30 principais CWEs e incluiremos o impacto potencial na ponderação dos 10 principais.</p>
+         <p>Além disso, gostaria de explorar insights adicionais que podem ser obtidos do conjunto de dados contribuído para ver o que mais pode ser aprendido que pode ser útil para as comunidades de segurança e desenvolvimento.</p>
+
+      </div>
+   </div>
+
+
+
+
+
+
+   
+
+   <div class="footer bg-dark">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-md-5 col-sm-6">
+               <h5>Vulnerabilities</h5>
+               <ul class="list-unstyled">
+                  <li><a href="#">Cross-site scripting (XSS)</a></li>
+                  <li><a href="#">SQL injection</a></li>
+                  <li><a href="#">Cross-site request forgery</a></li>
+                  <li><a href="#">Directory traversal</a></li>
+                  <li><a href="#">XML external entity injection</a></li>
+                  <li><a href="#">Server-side request forgery</a></li>
+                  
+               </ul">
+            </div>
+
+            <div class="col-md-5 col-sm-6">
+               <h5>Insights</h5>
+               <ul class="list-unstyled">
+                  <li><a href="#">Web Security Academy</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="">Research</a></li>
+                  <li><a href="">The Daily Swig</a></li>
+
+               </ul>
+            </div>
+
+            <div class="col-md-2 text-sm-center">
+               <img src="assets/imagens/logo.png" alt="">
+            </div>      
+         </div>
+      </div>
+   </div>
+
+    
+
+
+
+
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

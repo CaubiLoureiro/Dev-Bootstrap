@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <title>Bootstrap</title>
+</head>
+
+<body>
+  
+   <nav class="navbar navbar-light bg-dark navbar-expand-md fixed-top">
+
+      <div class="container">
+
+         <a class="navbar-brand" href="#"><img src="assets/imagens/logo.png" alt="logo" width=80px></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse bg-dark p-3 jumbotron" id="menu">
+               <div class="navbar-nav mr-auto">
+                  <a class="nav-link nav-item" href="/index.html">Início</a>
+                  
+                  <div class="dropdown">
+                     <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#academia">Academia</a>
+                     <div class="dropdown-menu">
+                        
+                        <a class="dropdown-item" href="/acadweb.html">Web</a>
+                        <a class="dropdown-item" href="#">Redes</a>
+                        
+                     </div>
+                  </div>
+
+                  <a class="nav-link nav-item" href="#contato">Contato</a>
+               </div>
+               
+               <div class="navbar-nav">
+                  <a class="nav-link nav-item" href="#acessomodal" data-toggle="modal"><i class="fas fa-sign-in-alt"></i> Acesso</a>
+                  <a class="nav-link nav-item" href="/registro.html">Registrar</a>
+
+               </div>
+         </div>
+      </div>
+
+   </nav>
+
+
+
+   <div class="bgvideo position-relative overflow-hidden">
+      
+      <div class="sob-video position-absolute text-center">
+         <div class="text-video">
+            <h1>Cybersecurity</h1>
+            <i class="fa-solid fa-angles-down mt-5"></i>
+         </div>
+      </div>
+
+      <video class="z-index-n1" autoplay="" loop="" preload="auto">
+         <source type="video/mp4" src="https://hackersec.com/wp-content/uploads/2022/04/hackersec-video-home.mp4">
+      </video>
+   </div>
+
+
+
+    <div class="modal fade" id="acessomodal">
+
+      <div class="modal-dialog modal-lg">
+
+         <div class="modal-content">
+
+            <div class="modal-header">
+
+               <span class="modal-title">Entrar</span>
+               <button class="close" type="button" data-dismiss="modal" aria-label="close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+
+            </div>
+
+            <div class="modal-body">
+
+               <form action="">
+                  <fieldset class="form-group">
+                     <legend class="font-weight-bold">Informações Pessoais</legend>
+
+                     <div class="form-group row">
+                        <label for="email" class="col-form-label col-lg-2">Email</label>
+                        <div class="col-lg-10">
+                           <input type="text" id="email" placeholder="Email" class="form-control" name="email">
+                           <div class="invalid-feedback"></div>
+                        </div>
+                     </div>
+
+
+                     <div class="form-group row">
+                        <label for="senha" class="col-form-label col-lg-2">Senha</label>
+                        <div class="col-lg-10">
+                           <input type="text" id="senha" placeholder="Senha" class="form-control" name="senha">
+                           <div class="invalid-feedback"></div>
+                        </div>
+                     </div>
+
+
+                  </fieldset>
+               </form>
+
+            </div>
+
+         </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+   
+   <div class="container mb-5 text-center p-5">
+      <h3 class="text-dark mb-5 font-weight-bold" id="artigos">Artigos em Destaque</h3>
+      <div class="row">
+
+         <div class="col-md-4">
+            <div class="card cardsHome shadow-lg h-100">
+               
+               <img src="assets/imagens/card7.jpg" alt="">
+               <div class="card-body">
+                  <h5 class="card-title">Ataques de dessincronização baseados em navegador: uma nova fronteira no contrabando de solicitações HTTP.</h5>
+                  <p class="card-text">10 de Agosto de 2022</p>
+               </div>
+
+               <div class="card-footer text-right">
+                  <button class="btn btn-outline-dark">Confira</button>
+               </div>
+               
+            </div>
+            
+         </div>
+            
+
+         <div class="col-md-4">
+            <div class="card cardsHome shadow-lg h-100">
+
+               <img src="assets/imagens/card5.jpg" alt="">
+               
+               <div class="card-body">
+                  <h5 class="card-title">Enquadramento sem iframes</h5>
+                  <p class="card-text">27 de Julho de 2022</p>
+               </div>
+
+               <div class="card-footer text-right">
+                  <button class="btn btn-outline-dark">Confira</button>
+               </div>
+
+            </div>
+
+         </div>
+
+
+         <div class="col-md-4">
+            <div class="card cardsHome shadow-lg h-100">
+
+               <img src="assets/imagens/card6.png" alt="">
+               
+               <div class="card-body">
+                  <h5 class="card-title">Ignorando a API HTML Sanitizer do Firefox.</h5>
+                  <p class="card-text">29 de Junho de 2022</p>
+               </div>
+
+               <div class="card-footer text-right">
+                  <button class="btn btn-outline-dark">Confira</button>
+               </div>
+
+            </div>
+
+         </div>
+     
+
+      </div>
+      
+   </div>
+
+
+   <div class="bg-dark p-5">
+      <div class="container text-center">
+         <h3 class="text-white mb-5 font-weight-bold" id="artigos">Ultimos Artigos</h3>
+         <div class="row">
+
+            <div class="col-md-3">
+               <div class="card cardsHome shadow-lg h-100">
+                  
+                  <img src="assets/imagens/card7.jpg" alt="">
+                  <div class="card-body">
+                     <h5 class="card-title">Ataques de dessincronização baseados em navegador: uma nova fronteira no contrabando de solicitações HTTP.</h5>
+                     <p class="card-text">10 de Agosto de 2022</p>
+                  </div>
+
+                  <div class="card-footer text-right">
+                     <button class="btn btn-outline-dark">Confira</button>
+                  </div>
+                  
+               </div>
+               
+            </div>
+               
+
+            <div class="col-md-3">
+               <div class="card cardsHome shadow-lg h-100">
+
+                  <img src="assets/imagens/card5.jpg" alt="">
+                  
+                  <div class="card-body">
+                     <h5 class="card-title">Enquadramento sem iframes</h5>
+                     <p class="card-text">27 de Julho de 2022</p>
+                  </div>
+
+                  <div class="card-footer text-right">
+                     <button class="btn btn-outline-dark">Confira</button>
+                  </div>
+
+               </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+               <div class="card cardsHome shadow-lg h-100">
+
+                  <img src="assets/imagens/card6.png" alt="">
+                  
+                  <div class="card-body">
+                     <h5 class="card-title">Ignorando a API HTML Sanitizer do Firefox.</h5>
+                     <p class="card-text">29 de Junho de 2022</p>
+                  </div>
+
+                  <div class="card-footer text-right">
+                     <button class="btn btn-outline-dark">Confira</button>
+                  </div>
+
+               </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+               <div class="card cardsHome shadow-lg h-100">
+
+                  <img src="assets/imagens/card8.jpg" alt="">
+                  
+                  <div class="card-body">
+                     <h5 class="card-title">Protótipos difundidos de gadgets de poluição.</h5>
+                     <p class="card-text">22 de Junho de 2022</p>
+                  </div>
+
+                  <div class="card-footer text-right">
+                     <button class="btn btn-outline-dark">Confira</button>
+                  </div>
+
+               </div>
+
+            </div>
+
+
+         </div>
+         
+      </div>
+   </div>
+
+
+
+
+   <div class="container mt-5 text-center">
+
+      
+      <button id="botao" href="#" class="btn btn-outline-dark">
+         <img class="" src="assets/imagens/TOP10-vulnerabilidades.jpg">
+         <h1>Ler artigo</h1>
+         <i class="fa-solid fa-right-long" style="font-size: 50px;"></i>
+      </button>
+            
+
+   </div>
+   
+   
+
+
+   <div class="footer mt-5 bg-dark">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-md-5 col-sm-6">
+               <h5>Vulnerabilities</h5>
+               <ul class="list-unstyled">
+                  <li><a href="#">Cross-site scripting (XSS)</a></li>
+                  <li><a href="#">SQL injection</a></li>
+                  <li><a href="#">Cross-site request forgery</a></li>
+                  <li><a href="#">Directory traversal</a></li>
+                  <li><a href="#">XML external entity injection</a></li>
+                  <li><a href="#">Server-side request forgery</a></li>
+                  
+               </ul">
+            </div>
+
+            <div class="col-md-5 col-sm-6">
+               <h5>Insights</h5>
+               <ul class="list-unstyled">
+                  <li><a href="#">Web Security Academy</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="">Research</a></li>
+                  <li><a href="">The Daily Swig</a></li>
+
+               </ul>
+            </div>
+
+            <div class="col-md-2 text-sm-center">
+               <img src="assets/imagens/logo.png" alt="">
+            </div>      
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
+</body>
+
+</html>

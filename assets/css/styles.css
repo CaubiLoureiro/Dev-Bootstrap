@@ -1,0 +1,66 @@
+.bgvideo{
+    margin-top: 100px;
+}
+
+.bgvideo .sob-video{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    opacity: 75%;
+    justify-content: center;
+}
+
+.bgvideo .sob-video .text-video{
+    margin-top: 20%;
+}
+
+.bgvideo .sob-video .text-video h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.bgvideo .sob-video .text-video i{
+    margin-top: 20%;
+    color: #fff;
+    font-size: 60px;
+}
+
+#carosel-id{
+    top: 100px;
+}
+
+.carousel-caption{
+    top: 70px;
+
+}
+
+.text-1{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.navbar{
+    height: 100px;
+    margin-bottom: 100px;
+}
+
+.cardsHome {
+    padding: 1rem;
+    margin: 2%;
+}
+
+.footer{
+    color: #efefef;
+    padding: 10px 0px;
+}
+
+.footer a {
+    color: #639bcf;
+
+}
+
+.footer a:hover{
+    color: #d8e6f3;
+}

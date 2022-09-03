@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <title>Bootstrap</title>
+</head>
+
+<body>
+  
+   <nav class="navbar navbar-light bg-dark navbar-expand-md fixed-top">
+
+      <div class="container">
+
+         <a class="navbar-brand" href="#"><img src="assets/imagens/logo.png" alt="logo" width=80px></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse bg-dark p-3 jumbotron" id="menu">
+               <div class="navbar-nav mr-auto">
+                  <a class="nav-link nav-item" href="/index.html">Início</a>
+                  
+                  <div class="dropdown">
+                     <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#academia">Academia</a>
+                     <div class="dropdown-menu">
+                        
+                        <a class="dropdown-item" href="/acadweb.html">Web</a>
+                        <a class="dropdown-item" href="#">Redes</a>
+                        
+                     </div>
+                  </div>
+
+                  <a class="nav-link nav-item" href="#contato">Contato</a>
+               </div>
+               
+               <div class="navbar-nav">
+                  <a class="nav-link nav-item" href="#acessomodal" data-toggle="modal"><i class="fas fa-sign-in-alt"></i> Acesso</a>
+                  <a class="nav-link nav-item" href="/registro.html">Registrar</a>
+
+               </div>
+         </div>
+      </div>
+
+   </nav>
+
+   <div class="container mb-5" style="margin-top: 140px;">
+      <h1 class="font-weight-bold mb-3">Academia de Segurança da Web </h1>
+      <h3 class="font-weight-bold mb-3">Caminho de aprendizagem </h3>
+      <h5 class="font-weight-bold mb-3">Veja como aproveitar ao máximo a Web Security Academy </h5>
+      <p class="mb-3">Se você é novo na segurança da Web, pode ser difícil saber por onde começar. É por isso que criamos este caminho de 
+         aprendizado sugerido para orientá-lo na direção certa. Recomendamos concluir os laboratórios à medida que avança, mas não 
+         tenha medo de passar para o próximo tópico se ficar preso. Você pode voltar aos laboratórios mais desafiadores depois de 
+         desenvolver ainda mais suas habilidades.</p>
+
+      <p>Quando você começar a desenvolver suas habilidades de teste de segurança na Web, poderá testá-las com nosso Practitioner 
+         certificado do Burp Suite . Antes de estar pronto para tentar o exame Burp Suite Certified Practitioner, você deve ser capaz 
+         de concluir confortavelmente todos os laboratórios da Web Security Academy rotulados como "Practitioner" ou inferior. Não há um 
+         prazo definido para a conclusão dos laboratórios, mas você deve poder fazê-lo sem precisar acessar as soluções fornecidas. </p>
+
+
+   </div>
+      
+   
+   <div class="container jumbotron text-center mb-5">
+
+      <h2 class="font-weight-bold mb-3">Tópicos do lado do servidor</h2>
+      <p class="text-justify mb-5">Para iniciantes completos, recomendamos começar com nossos tópicos do lado do servidor. Essas vulnerabilidades 
+         geralmente são mais fáceis de aprender porque você só precisa entender o que está acontecendo no servidor. Nossos 
+         materiais e laboratórios ajudarão você a desenvolver alguns dos principais conhecimentos e habilidades nos quais você 
+         confiará sempre. </p>
+
+      <table class="table">
+
+
+         <tbody>
+            <tr> 
+               
+               <td class="w-50"><a href="">SQL injection</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+
+               
+               <td class="w-50"><a href="">Information disclosure</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+            </tr>
+
+            <tr>
+               
+               <td class="w-50"><a href="">Authentication</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+
+            
+               <td class="w-50"><a href="">Access control</a><div class="progress bg-dark"><div class="progress-bar w-75">75%</div></div></td>
+            </tr>
+
+            <tr>
+               
+               <td class="w-50"><a href="">Directory traversal</a><div class="progress bg-dark"><div class="progress-bar w-50">50%</div></div></td>
+
+               
+               <td class="w-50"><a href="">File upload vulnerabilities</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+            </tr>
+
+            <tr>
+               
+               <td class="w-50"><a href="">Command injection</a><div class="progress bg-dark"><div class="progress-bar w-100">100%</div></div></td>
+               
+               
+               <td class="w-50"><a href="">Server-side request forgery (SSRF)</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+            </tr>
+
+            <tr>
+               
+               <td class="w-50"><a href="">Business logic vulnerabilities</a><div class="progress bg-dark"><div class="progress-bar w-100">100%</div></div></td>
+
+               
+               <td class="w-50"><a href="">XXE injection</a><div class="progress bg-dark"><div class="progress-bar w-75">75%</div></div></td>
+            </tr>
+         </tbody>
+
+      </table>
+
+
+      <hr class="w-50 mt-5 mb-5">
+
+
+      <h2 class="font-weight-bold mb-3">Tópicos do lado do cliente </h2>
+      <p class="text-justify mb-5">As vulnerabilidades do lado do cliente introduzem uma camada adicional de complexidade, o que 
+         pode torná-las um pouco mais desafiadoras. Esses materiais e laboratórios ajudarão você a desenvolver as habilidades do 
+         lado do servidor você já aprendeu e ensina como identificar e explorar também alguns vetores complicados do lado do 
+         cliente. </p>
+
+      <table class="table">
+
+
+         <tbody>
+            <tr> 
+               
+               <td class="w-50"><a href="">Cross-site scripting (XSS)</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+
+               
+               <td class="w-50"><a href="">Clickjacking</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+            </tr>
+
+            <tr>
+              
+               <td class="w-50"><a href="">Cross-site request forgery (CSRF)</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+
+               
+               <td class="w-50"><a href="">DOM-based vulnerabilities</a><div class="progress bg-dark"><div class="progress-bar w-75">75%</div></div></td>
+            </tr>
+
+            <tr>
+               
+               <td class="w-50"><a href="">Cross-origin resource sharing</a><div class="progress bg-dark"><div class="progress-bar w-50">50%</div></div></td>
+
+               
+               <td  class="w-50"><a href="">WebSockets</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+            </tr>
+
+         
+         </tbody>
+
+      </table>
+
+      <hr class="w-50 mt-5 mb-5">
+
+      <h2 class="font-weight-bold mb-3">Tópicos avançados</h2>
+      <p class="text-justify mb-5">Esses tópicos não são necessariamente mais difíceis de dominar, mas geralmente exigem 
+         uma compreensão mais profunda e uma amplitude mais ampla de conhecimento. Recomendamos que você se familiarize com 
+         o básico antes de abordar esses laboratórios, alguns dos quais são baseados em técnicas pioneiras descobertas por nossa 
+         equipe de pesquisa de classe mundial.</p>
+
+      <table class="table">
+
+
+         <tbody>
+            <tr> 
+               
+               <td class="w-50"><a href="">Insecure deserialization</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+
+               
+               <td class="w-50"><a href="">Server-side template injaction</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+            </tr>
+
+            <tr>
+               
+               <td class="w-50"><a href="">Web cache poisoning</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+
+            
+               <td class="w-50"><a href="">HTTP Host header attacks</a><div class="progress bg-dark"><div class="progress-bar w-75">75%</div></div></td>
+            </tr>
+
+            <tr>
+               
+               <td class="w-50"><a href="">HTTO request smuggling</a><div class="progress bg-dark"><div class="progress-bar w-50">50%</div></div></td>
+
+               
+               <td class="w-50"><a href="">OAuth authentication</a><div class="progress bg-dark"><div class="progress-bar w-25">25%</div></div></td>
+            </tr>
+
+            <tr>
+               
+               <td class="w-50"><a href="">JWT attacks</a><div class="progress bg-dark"><div class="progress-bar w-100">100%</div></div></td>
+               
+              
+            </tr>
+
+            
+         </tbody>
+
+      </table>
+
+      
+      
+   </div>
+
+   
+
+   <div class="container text-center">
+
+      <h1 class="font-weight-bold mb-3">Quer as últimas novidades da Web Security Academy?</h1>
+      <h4 class="mb-3">Siga-nos no Twitter para novos lançamentos de tópicos e para se envolver com nossa comunidade mais ampla.</h4>
+
+      <button class="btn btn-primary"><i class="fa-brands fa-twitter"></i> Siga-nos no Twitter</button>
+
+   </div>
+
+
+
+
+
+
+
+
+
+
+   
+   <div class="footer mt-5 bg-dark">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-md-5 col-sm-6">
+               <h5>Vulnerabilities</h5>
+               <ul class="list-unstyled">
+                  <li><a href="#">Cross-site scripting (XSS)</a></li>
+                  <li><a href="#">SQL injection</a></li>
+                  <li><a href="#">Cross-site request forgery</a></li>
+                  <li><a href="#">Directory traversal</a></li>
+                  <li><a href="#">XML external entity injection</a></li>
+                  <li><a href="#">Server-side request forgery</a></li>
+                  
+               </ul">
+            </div>
+
+            <div class="col-md-5 col-sm-6">
+               <h5>Insights</h5>
+               <ul class="list-unstyled">
+                  <li><a href="#">Web Security Academy</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="">Research</a></li>
+                  <li><a href="">The Daily Swig</a></li>
+
+               </ul>
+            </div>
+
+            <div class="col-md-2 text-sm-center">
+               <img src="assets/imagens/logo.png" alt="">
+            </div>      
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
+</body>
+
+</html>
